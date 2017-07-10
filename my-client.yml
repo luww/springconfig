@@ -1,2 +1,4 @@
 my-config:
-  appName: my-app
+  appName: my-app-lww
+  port: 9999
+  title: luweiwei cofig
