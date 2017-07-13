@@ -1,4 +1,37 @@
-my-config:
-  appName: my-app-lww
-  port: 9999
-  title: luweiwei cofig
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hshk
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  thymeleaf:
+    content-type: text/html
+    mode: HTML5
+    encoding: utf-8
+    cache: false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: test
+    password: 123456
+#  application:
+#    name: my-client
+#  cloud:
+#    cofig:
+#      uri: http://127.0.0.1:8888
+#      label: master
+server:
+  port: 8083
+hshk:
+  name: hshk
+  content: "${hshk.name}"
+security:
+  user:
+    name: admin
+    password: 123456
+  basic:
+    enabled: false
